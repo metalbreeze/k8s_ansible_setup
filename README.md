@@ -1,7 +1,9 @@
 # k8s_ansible_setup
 
-保证 目标机器能ssh 自动登录 ansible ok
-0.验证
+编辑k8s.hosts 包含主机名
+保证目标机器能ssh 自动登录
+用如下命令测试
+0
 ```
 ansible -i k8s.hosts YOUR_MACHINE_HOSTNAME1,YOUR_MACHINE_HOSTNAME2,YOUR_MACHINE_HOSTNAME3 -m ping
 ```
